@@ -7,7 +7,7 @@ import 'package:tf_data_streamer/tf_data_streamer.dart';
 ///
 /// TfPaginatedList
 ///
-/// A list which loads data items in paginated matter, pages by pages from the provided source of data items.
+/// A list which the loads data items in paginated matter, pages by pages from the provided source of data items.
 ///
 abstract class TfPaginatedList<T> extends TfDataStreamer<List<T>> {
   // The very next page to loa
@@ -48,7 +48,7 @@ abstract class TfPaginatedList<T> extends TfDataStreamer<List<T>> {
   ///
   /// Returns `true` if there are more pages to load, otherwise returns `false`.
   ///
-  bool get hasMoreItemsToLoad {
+  bool get hasMorePagesToLoad {
     return _hasMoreToItems;
   }
 
@@ -60,10 +60,10 @@ abstract class TfPaginatedList<T> extends TfDataStreamer<List<T>> {
   }
 
   ///
-  /// Add your implementation for the source of data items here.
+  /// Add your implementation for the source of data items here. \
   /// The source is supposed to support traditional pagination paramers viz., `limit` and `offset`.
   ///
-  /// `limit`: The limit of items to be loaded, essentially the page length.
+  /// `limit`: The limit of items to be loaded, essentially the page length. \
   /// `offset`: Offset to start loading page from.
   ///
   Future<List<T>> loadItems(int limit, int offset);
