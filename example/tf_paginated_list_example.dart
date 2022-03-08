@@ -9,6 +9,11 @@ class NaturalNumbersList extends TfPaginatedList<int> {
 
   @override
   Future<List<int>> loadItems(int limit, int offset) async {
+    await Future.delayed(const Duration(seconds: 2));
+    // allow only 100 numbers
+    if (offset >= 100) {
+      return <int>[];
+    }
     return List.generate(limit, (index) => offset + index + 1);
   }
 }
