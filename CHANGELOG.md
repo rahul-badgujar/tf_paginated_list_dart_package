@@ -1,3 +1,5 @@
 ## 1.0.0
 
-- Initial version.
+- Support for Paginated List added.
+- Supports reloading of currently loaded items.
+
