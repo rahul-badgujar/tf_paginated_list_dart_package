@@ -1,6 +1,6 @@
 # tf_paginated_list
 
-A list which the loads data items in paginated matter, pages by pages from the provided source of data items.
+A list which loads the data items in paginated matter, pages by pages from the provided source of data items.
 
 ## Supported Dart Versions
 
