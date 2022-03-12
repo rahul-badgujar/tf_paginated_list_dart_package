@@ -85,7 +85,7 @@ print(naturalNumbersGenerator.currentPageNo);
 naturalNumbersGenerator.dispose();
 ```
 
-### **To create a On-Demand Paginated ListView in Flutter**
+### **To create an On-Demand Paginated ListView in Flutter**
 
 ```dart
 // Creating the instance with required page length.
