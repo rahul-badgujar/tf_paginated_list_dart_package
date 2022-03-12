@@ -7,7 +7,7 @@ import 'package:tf_data_streamer/tf_data_streamer.dart';
 ///
 /// TfPaginatedList
 ///
-/// A list which the loads data items in paginated matter, pages by pages from the provided source of data items.
+/// A list which the loads data items in paginated manner, pages by pages from the provided source of data items.
 ///
 abstract class TfPaginatedList<T> extends TfDataStreamer<List<T>> {
   // The very next page to loa
